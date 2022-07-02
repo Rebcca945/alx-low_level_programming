@@ -12,11 +12,11 @@ int x;
 
 srand(time(0));
 x = rand() - RAND_MAX / 2;
-if (n > 0) 
-	printf("%d is positive\n", x);
+if (n > 5) 
+	printf("%d and is greater than 5\n", x);
 if (n == 0)
-	printf("%d is zero\n", x);
-if (n < 0)
-	printf("%d is negative\n", x);
+	printf("%d and is 0\n", x);
+if (n < 6 && n != 0)
+	printf("%d and is less than 6 and not 0\n", x);
 return (0);
 }
