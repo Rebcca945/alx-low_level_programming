@@ -1,12 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main -> assign a random number to the variable n each time it is executed and prints out 
- * based a condition
- * Return : always 0
+ * main - Entry point
+ * 
+ * Return :Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 int n;
 srand(time(0));
