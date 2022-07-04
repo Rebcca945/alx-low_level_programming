@@ -15,6 +15,6 @@ for (ch ='z'; ch >= 'a'; ch--)
 {
 putchar(ch);
 }
-putchar(10); /* this is an ascil code for new line*/
-retutn (0);
+putchar('\n');
+return (0);
 }
