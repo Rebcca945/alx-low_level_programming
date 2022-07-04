@@ -3,12 +3,14 @@
 #include <stdio.h>
 
 /**
- * main -> assign a random number to a variable n
- * Return : always 0
+ * main - Entry point
+ * 
+ * Return: Always 0
  */
-int main (void)
+int main(void)
 {
 int n;
+
 if (n > 5) 
 {
 	printf("%d and is greater than 5\n", n);
