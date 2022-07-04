@@ -3,22 +3,21 @@
 #include <stdio.h>
 
 /**
- * main -> assign a random number to the variable n each time it is executed
- * and print the last digit of the number stored in the variable n
- * Return : always 0
+ * main - Entry point
+ *
+ * Return: Always 0
  */
 int main(void)
 {
-	char ch;
-	for (ch = 'a'; ch <= '2'; ch++)
-	{
-		if (ch != 'q' && ch != 'e')
-		{
-			putchar(ch);
-		}
-	}
+char ch;
 
-		putchar(20);
-
-		return (0);
+for (ch = 'a'; ch <= '2'; ch++)
+{
+if (ch != 'q' && ch != 'e')
+{
+putchar(ch);
+}
+}
+putchar(20);
+return (0);
 }
