@@ -18,7 +18,7 @@ ch++;
 
 ch = 'A';
 
-while (c <= 'Z')
+while (ch <= 'Z')
 {
 putchar(ch);
 ch++;
