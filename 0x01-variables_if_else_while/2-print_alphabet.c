@@ -9,24 +9,14 @@
  */
 int main(void)
 {
-int n;
 
-strand(time(0));
-n = rand() - RAND_MAX / 2;
+char c = 'a';
 
-printf("Last digit of %d is ", n);
-if (n > 5)
+while (c <= 'z')
 {
-printf("greater than 5");
+    putchar(c);
+    c++;
 }
-if (n == 0)
-{
-printf("0");
-}
-if (n < 0 && n != 0)
-{
-printf("less than 0 not 0");
-}
-printf("\n");
+putchar('\n');
 return (0);
 }
