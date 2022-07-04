@@ -8,14 +8,22 @@
  */
 int main(void)
 {
-for (ch = 'a'; ch <= 'z'; ch++)
+char ch = 'a';
+
+while(ch <= 'z')
 {
 putchar(ch);
+ch++;
 }
-for (ch = 'A'; ch <= 'Z'; ch++)
+
+ch = 'A';
+
+while (c <= 'Z')
 {
 putchar(ch);
+ch++;
 }
+
 putchar('\n');
 return (0);
 }
