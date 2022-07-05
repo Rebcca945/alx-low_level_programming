@@ -10,8 +10,6 @@
 int add(int x, int y)
 {
 int n;
-x = 89;
-y = 9;
 
 n = x + y;
 return (n);
