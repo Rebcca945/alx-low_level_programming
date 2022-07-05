@@ -10,6 +10,8 @@ int i;
 
 for (i = n; i <= 98; i++)
 {
-_putchar(i);
+printf("%d",i);
 }
+_putchar('\n');
+return (0);
 }
