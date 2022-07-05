@@ -19,5 +19,4 @@ for (j = 0; j <= 10; j++)
 _putchar(i*j);
 }
 }
-return (0);
 }
