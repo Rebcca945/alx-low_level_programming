@@ -13,6 +13,6 @@ int n;
 x = 89;
 y = 9;
 
-n = add(x, y);
+n = x + y;
 return (n);
 }
