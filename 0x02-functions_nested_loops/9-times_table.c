@@ -2,7 +2,8 @@
 
 /**
  * times_table - 9 times a number
- * @n: the passed args
+ * @i: increament
+ * @x: store product
  * Return: x
  */
 void times_table(void);
@@ -12,7 +13,7 @@ int x;
 
 for (i = 0; i < 10; i++)
 {
-x = 9 * i;
+x = i * 9;
 _putchar(x);
 }
 }
