@@ -10,7 +10,7 @@ int i;
 
 for (i = n; i <= 98; i++)
 {
-printf("%d",i);
+_putchar(i);
 }
 _putchar('\n');
 return (0);
