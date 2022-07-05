@@ -13,5 +13,4 @@ for (i = n; i <= 98; i++)
 _putchar(i);
 }
 _putchar('\n');
-return (0);
 }
