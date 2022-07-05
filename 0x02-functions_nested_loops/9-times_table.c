@@ -2,19 +2,22 @@
 
 /**
  * times_table - 9 times a number
- * @i: increament
- * @x: store product
+ * @i: increament i
+ * @j: increament j
  * Return: x
  */
 
 void times_table(void)
 {
 int i;
-int x;
+int j;
 
 for (i = 0; i < 10; i++)
 {
-x = i * 9;
-_putchar(x);
+for (j = 0; j <= 10; j++)
+{
+_putchar(i*j);
+}
+}
 }
 }
