@@ -10,7 +10,7 @@ int i;
 
 if (n = 98)
 {
-_putchar(98);
+_putchar('98');
 }
 for (i = n; i <= 98; i++)
 {
