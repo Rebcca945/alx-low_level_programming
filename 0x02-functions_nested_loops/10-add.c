@@ -12,6 +12,5 @@ int add(int x, int y)
 int n;
 
 n = add(89, 9);
-printf("%d\n", n);
-return (0);
+return (n);
 }
