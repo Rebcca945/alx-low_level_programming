@@ -2,8 +2,8 @@
 
 /**
  * times_table - 9 times a number
- * @i: increament i
- * @j: increament j
+ * @i: value of i increamented
+ * @j: value of j increamented
  * Return: x
  */
 
@@ -12,7 +12,7 @@ void times_table(void)
 int i;
 int j;
 
-for (i = 0; i < 10; i++)
+for (i = 0; i <= 10; i++)
 {
 for (j = 0; j <= 10; j++)
 {
