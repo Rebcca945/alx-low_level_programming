@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int print_sign - prints sign
+ * print_sign - prints sign
  * @n: argument passed
  * Return: 1, 0 -1
  */
