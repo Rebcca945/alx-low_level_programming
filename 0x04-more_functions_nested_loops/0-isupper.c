@@ -5,6 +5,7 @@
  * @c: integer
  * return: success
  */
+
 int _isupper(int c)
 {
 return (c >= 'A' && c <= 'Z');
