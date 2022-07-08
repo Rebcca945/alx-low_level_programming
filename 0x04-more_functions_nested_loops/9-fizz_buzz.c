@@ -8,6 +8,7 @@
 
 int main(void)
 {
+
 int p = 100;
 int i;
 
@@ -18,10 +19,12 @@ if (i % 3 == 0 && i % 5 == 0)
 {
 printf("FizzBuzz ");
 }
+
 else if (i % 3 == 0)
 {
 printf("Fizz ");
 }
+
 else if (i % 5 == 0)
 {
 if (i < p)
@@ -34,7 +37,9 @@ else
 {
 printf("%i ", i);
 }
+
 i++;
+
 }
 pritnf("\n");
 return (0);
