@@ -3,7 +3,7 @@
 /**
  *main - entry point
  *
- *Return: nothing
+ *Return: void
  */
 
 int main(void)
@@ -42,5 +42,6 @@ i++;
 
 }
 pritnf("\n");
+
 return (0);
 }
