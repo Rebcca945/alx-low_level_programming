@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strncat - concatenate and add inputed number
- * @dest: string to be appended
- * @src: string to be completed at end of dest
- * @n: integer parameter
- * return: return new string
+ *_strncat - concatenate and add inputed number
+ *@dest: string to be appended
+ *@src: string to be completed at end of dest
+ *@n: integer parameter
+ *return: return new string
  */
 
 char *_strncat(char *dest, char *src, int n)
