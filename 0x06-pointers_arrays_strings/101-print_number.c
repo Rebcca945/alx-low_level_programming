@@ -16,7 +16,7 @@ num = -num;
 }
 if ((num / 10) > 0)
 {
-_print_number(num / 10);
+print_number(num / 10);
 }
 _putchar((num % 10) + '0');
 }
