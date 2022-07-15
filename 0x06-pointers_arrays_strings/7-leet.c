@@ -2,24 +2,28 @@
 
 /**
  * leet - encode string
- * @str: string to be encoded
+ * @x: string to be encoded
  * Return: encode string
  */
 
-char *leet(char *str)
+char *leet(char *x)
 {
-int num1 = 0;
-int num2;
-char leet[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
+int a = 0, l = 5, b;
+char tr[5] = {'A', 'E', 'O', 'T', 'L'};
+char trw[5] = {'4', '3', '0', '7', '1'};
 
-while (str[++num1])
+while (x[a])
 {
-for (num2 = 0; num2 <= 7; num2++)
+b = 0;
+while (b < l)
 {
-if (str[num1] == leet[num2] ||
-		str[num1] - 32 == leet[num2])
-	str[num1] = num2 + '0';
+if (x[a] == tr[b] || x[a] - 32 == tr[b])
+{
+x[a] = trw[b];
 }
+b++;
 }
-return (str);
+a++;
+}
+return (x);
 }
