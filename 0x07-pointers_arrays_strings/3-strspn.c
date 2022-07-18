@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn : search a string
+ * _strspn - search a string
  * @s: source string
  * @accept: string accepted
  * Return: number of bytes
