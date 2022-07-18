@@ -1,29 +1,29 @@
 #include "main.h"
 
 /**
- * _strchr - string character
- * @s: string
- * @c: character
- * Return: string
+ * _strspn : search a string
+ * @s: source string
+ * @accept: string accepted
+ * Return: number of bytes
  */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-int a = 0;
-int b;
+unsigned int a = 0, b, t = 0;
 
-while (s[a])
+while (accept[a])
 {
+b = 0;
+
+while (s[b] != 32)
+{
+if (accept[a] == s[b])
+{
+t++;
+}
+b++;
+}
 a++;
 }
-
-for (b = 0; b <= a; b++)
-{
-if (c == s[b])
-{
-s += b;
-return (s);
-}
-}
-return ('\0');
+return (t);
 }
