@@ -1,47 +1,40 @@
 #include "main.h"
 
 /**
- * len  - checks the lengths of string
+ * length - checks the lengths of string
  * @s: string
  * Return: return length of string
  */
 
-int len(char *s)
+int length(char *s)
 {
-if (*s == '\0')
+if (!*s)
 {
 return (0);
 }
-return (1 + len(s + 1));
+return (1 + length(s + 1));
 }
 
 /**
  * pal - check if string is palindrome
  * or not
- * @i: integer
- * @l: length of string
  * @s: string
- * Return: if palindrome 1 if not 0
+ * @l: position
+ * @s: string
+ * Return: boolean value
  */
 
-int pal(int i, int l, int *s)
+int pal(char *s, int l)
 {
-if (l > 0)
+if (l < 1)
 {
-if (s[i] == s[l])
-{
-return (pal(i + 1, l - 1, s));
+return (1);
 }
-else if (s[i] != s[l])
+if (*s == *(s + 1))
 {
+return (pal(s + 1, l - 2));
+}
 return (0);
-}
-else
-{
-return (1);
-}
-}
-return (1);
 }
 
 /**
@@ -52,5 +45,7 @@ return (1);
 
 int is_palindrome(char *s)
 {
-return (pal(0, len(s) - 1, *s));
+int len = length(s);
+
+return (pal(s, len - 1));
 }
