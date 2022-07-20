@@ -12,7 +12,7 @@ if (!*s)
 {
 return (0);
 }
-return (1 + length(s + 1));
+return (1 + length(++s));
 }
 
 /**
@@ -20,7 +20,6 @@ return (1 + length(s + 1));
  * or not
  * @s: string
  * @l: position
- * @s: string
  * Return: boolean value
  */
 
