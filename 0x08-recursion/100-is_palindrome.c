@@ -24,7 +24,7 @@ return (1 + length(s + 1));
  * Return: boolean value
  */
 
-int pal(char i, int l, char *s)
+int pal(int i, int l, char *s)
 {
 if (l > 0)
 {
