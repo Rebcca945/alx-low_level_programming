@@ -52,5 +52,5 @@ return (1);
 
 int is_palindrome(char *s)
 {
-return (pal(0, len(s) - 1, s));
+return (pal(0, len(s) - 1, *s));
 }
