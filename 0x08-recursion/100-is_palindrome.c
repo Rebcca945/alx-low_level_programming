@@ -8,32 +8,40 @@
 
 int length(char *s)
 {
-if (!*s)
+if (*s == '\0')
 {
 return (0);
 }
-return (1 + length(++s));
+return (1 + length(s + 1));
 }
 
 /**
  * pal - check if string is palindrome
  * or not
+ * @i: integer
  * @s: string
- * @l: position
+ * @l: length
  * Return: boolean value
  */
 
-int pal(char *s, int l)
+int pal(char i, int l, char *s)
 {
-if (l < 1)
+if (l > 0)
+{
+if (s[i] == s[l])
+{
+return (pal(i + 1, l - 1, s));
+}
+else if (s[i] != s[l])
+{
+return (0);
+}
+else
 {
 return (1);
 }
-if (*s == *(s + 1))
-{
-return (pal(s + 1, l - 2));
 }
-return (0);
+return (1);
 }
 
 /**
@@ -44,7 +52,5 @@ return (0);
 
 int is_palindrome(char *s)
 {
-int len = length(s);
-
-return (pal(s, len - 1));
+return (pal(0, length(s) - 1, s));
 }
