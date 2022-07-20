@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- *prime - recursion loop
+ *prime - return 0 or 1
  *@n: integer
  *@i: int that iterates
- *return: 1 or 0
+ *Return: 1 if number is prime or
+ *0 if number is not
  */
+
 int prime(int n, int i)
 {
 
@@ -31,8 +33,10 @@ return (1);
 /**
  *is_prime_number - evaluate prime number
  *@n: integer
- *return: 1 or 0
+ *Return: 1 if number is prime or.
+ *0 if number is not prime.
  */
+
 int is_prime_number(int n)
 {
 
