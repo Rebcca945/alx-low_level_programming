@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * sqrt - checks if sqrt of number exist
+ * sqrt_num - checks if sqrt of number exist
  * @n: integer
  * @s: sqrt
  * Return: sqrt of number or -1 for error
  */
 
-int sqrt(int n, int s)
+int sqrt_num(int n, int s)
 {
 if ((s * s) == n)
 {
@@ -21,7 +21,7 @@ return (-1);
 }
 else
 {
-return (sqrt(n, s + 1));
+return (sqrt_num(n, s + 1));
 }
 }
 }
@@ -41,6 +41,6 @@ return (-1);
 }
 else
 {
-return (sqrt(n, 0));
+return (sqrt_num(n, 0));
 }
 }
