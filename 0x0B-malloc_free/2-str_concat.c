@@ -6,16 +6,13 @@
  * @s2: second string
  * Return: s1 + s2
  */
-
 char *str_concat(char *s1, char *s2)
 {
 int i = 0, j = 0, k = 0, m = 0;
 char *p;
 
 if (s1 == NULL)
-{
-s1 = "";
-}
+	s1 = "";
 if (s2 == NULL)
 {
 s2 = "";
@@ -35,7 +32,6 @@ if (p == NULL)
 return (NULL);
 }
 j = 0;
-
 while (m < k)
 {
 if (m < i)
