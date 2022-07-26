@@ -28,7 +28,7 @@ str = malloc(sizeof(char) * size + 1);
 if (str == NULL)
 	return (NULL);
 
-i = 0;
+int i = 0;
 
 for (arg = 0; arg < ac; arg++)
 {
