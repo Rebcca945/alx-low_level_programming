@@ -17,7 +17,7 @@ int *p, i, s;
 if (min > max)
 	return (NULL);
 
-p = max - min + 1;
+s = max - min + 1;
 
 p = malloc(sizeof(int) * s);
 
