@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc *.c -c -fpIC
-gcc *.o -shared -o libdynamic.so
+gcc *.c -c -fPIC
+gcc *.o -shared -o libholberton.so
